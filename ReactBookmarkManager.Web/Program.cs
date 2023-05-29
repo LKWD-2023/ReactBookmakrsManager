@@ -1,4 +1,6 @@
 
+using Microsoft.AspNetCore.Authentication.Cookies;
+
 namespace ReactBookmarkManager.Web
 {
     public class Program
@@ -10,10 +12,19 @@ namespace ReactBookmarkManager.Web
             var builder = WebApplication.CreateBuilder(args);
 
             builder.Services.AddAuthentication(CookieScheme)
-                .AddCookie(CookieScheme, options =>
+            .AddCookie(CookieScheme, options =>
+            {
+                options.Events = new CookieAuthenticationEvents
                 {
-                    options.LoginPath = "/account/login";
-                });
+                    OnRedirectToLogin = context =>
+                    {
+                        context.Response.StatusCode = 403;
+                        context.Response.ContentType = "application/json";
+                        var result = System.Text.Json.JsonSerializer.Serialize(new { error = "You are not authenticated" });
+                        return context.Response.WriteAsync(result);
+                    }
+                };
+            });
 
             builder.Services.AddSession();
 
