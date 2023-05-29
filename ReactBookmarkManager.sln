@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32819.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactBookmarkManager.Web", "ReactBookmarkManager.Web\ReactBookmarkManager.Web.csproj", "{8EE06BB2-AC2F-4EE9-884A-84472C16C665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactBookmarkManager.Data", "ReactBookmarkManager.Data\ReactBookmarkManager.Data.csproj", "{753EAC1A-6F07-40DC-A6FC-23D68EC1C031}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EE06BB2-AC2F-4EE9-884A-84472C16C665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EE06BB2-AC2F-4EE9-884A-84472C16C665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EE06BB2-AC2F-4EE9-884A-84472C16C665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EE06BB2-AC2F-4EE9-884A-84472C16C665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{753EAC1A-6F07-40DC-A6FC-23D68EC1C031}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{753EAC1A-6F07-40DC-A6FC-23D68EC1C031}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{753EAC1A-6F07-40DC-A6FC-23D68EC1C031}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{753EAC1A-6F07-40DC-A6FC-23D68EC1C031}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6AF6EAF1-43EF-44A0-8464-BF1EB80712FC}
+	EndGlobalSection
+EndGlobal
